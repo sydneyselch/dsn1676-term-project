@@ -27,7 +27,7 @@ body{
 }
 
 a:focus {
-    outline: 3px solid #A00000;
+    outline: 2px dotted purple;
 }
 
 .skip-links {
@@ -47,18 +47,18 @@ a:focus {
     text-decoration: none;
     background-color: black;
     padding: 1rem;
-    border: 1px solid #A00000;
+    border: 1px dotted purple;
     margin: .5rem;
 }
 
 .logo{
     width:75px;
-    height:80px;
+    height:75px;
     background-image: url(../img/logo.svg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: block;
-    margin: 1em auto 0;
+    margin: 1em auto 1em;
     text-indent: -9999px;
 }
 
@@ -132,12 +132,10 @@ text-decoration: underline;
 
 
 .problem{
-	border-bottom: 1px solid #CDCDCD;
+    border-top: 1px solid #CDCDCD;
+	border-bottom: 2px solid #CDCDCD;
 	position: relative;
-	width: 100%;
-	top: 0;
-    
-
+	width: 100%; 
 }
 
 @-webkit-keyframes colorshift {
@@ -211,7 +209,7 @@ text-decoration: underline;
 	-moz-animation:    colorshift 15s infinite;
  	-ms-animation:     colorshift 15s infinite;
  	-o-animation:      colorshift 15s infinite;
-	margin: .5em .25em .5em;
+	margin: .5em .25em .125em;
 }
 
 figure .icon{
@@ -379,11 +377,18 @@ figure .icon{
     .container {
         margin: 0 3em 0;
     }
+    
+    .problem-type {
+        font-size: 5rem;
+    }
 }
 
 @media only screen and (min-width:40em){
     .container {
         margin: 0 5em 0;
+    }
+      .problem-type {
+        font-size: 6rem;
     }
 }
 
@@ -391,11 +396,17 @@ figure .icon{
     .container {
         margin: 0 7em 0;
     }
+      .problem-type {
+        font-size: 7rem;
+    }
 }
 
 @media only screen and (min-width:60em){
     .container {
         margin: 0 9em 0;
+    }
+      .problem-type {
+        font-size: 8rem;
     }
 }
 

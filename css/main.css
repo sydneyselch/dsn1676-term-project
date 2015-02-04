@@ -22,7 +22,7 @@ html {
 
 body{
     margin:0;
-    paddding:0;
+    padding:0;
     overflow: hidden;
 }
 
@@ -102,18 +102,15 @@ text-decoration: underline;
 #header ul{
     display: block;
     list-style-type: none;
-    float: left;
-    position: relative;
-    right: -50%;
+    text-align: center;
+    
 }
 
 #header ul li{
-    display:block;
-    float:left;
-    left:-50%;
+    display:inline-block;
     margin: 0 0 0 24px;
     position: relative;
-    text-align: center;
+    
     letter-spacing: .125em;
 }
 
@@ -135,8 +132,52 @@ text-decoration: underline;
     border-top: 1px solid #CDCDCD;
 	border-bottom: 2px solid #CDCDCD;
 	position: relative;
-	width: 100%; 
+    z-index: 2;
+
 }
+
+.confetti{
+     background-image: url(../img/confetti.svg);
+    background-size: 15%;
+    width:100%
+     animation: zoom 10s ease-out alternate;
+    -webkit-animation: zoom 10s alternate infinite;
+    position: absolute;
+	top:0;
+    left:0;
+    right:0;
+    bottom:0;   
+     box-shadow: inset 0 0 0 1000px rgba(255,255,255,.8)
+}
+
+#banner {
+    position:relative;
+    overflow: hidden;
+    
+}
+
+
+@-webkit-keyframes zoom{
+    0% {
+        -webkit-transform: scale(1,1)
+    }
+    
+    100% {
+       -webkit-transform: scale(1.125,1.125)   
+    }
+}
+
+@keyframes zoom{
+    0% {
+        -webkit-transform: scale(1,1)
+    }
+    
+    100% {
+        -webkit-transform: scale(1.125,1.125)   
+    }
+}
+
+
 
 @-webkit-keyframes colorshift {
 	0%   { color: #ff4701; }
@@ -229,24 +270,14 @@ figure .icon{
     height:100px;
 }
 
-
-.gear:hover{
-    animation: spin 3s linear infinite;
-    -webkit-animation: spin 3s linear infinite;
-	-moz-animation: spin 3s linear infinite;
- 	-ms-animation: spin 3s linear infinite;
- 	-o-animation:  spin 3s linear infinite;
+.gear {
+    -webkit-transform: rotate(0deg);
+    transition: all 3s linear;
 }
 
-@keyframes spin{
-   0%{
-       -webkit-transform: rotate(0deg);   
-   }
-    
-    100% {
-         -webkit-transform: rotate(360deg);   
-   }     
-    
+
+.gear:hover{
+    -webkit-transform: rotate(360deg);
 }
 
 @-webkit-keyframes spin{
@@ -312,7 +343,7 @@ figure .icon{
 
 
 .pencil:hover{
-    anmiaton: shake 1s linear;  
+    animation: shake 1s linear;  
     -webkit-animation: shake 1s linear ;  
 	-moz-animation: shake 1s linear;  
  	-ms-animation: shake 1s linear ;  
@@ -390,6 +421,9 @@ figure .icon{
       .problem-type {
         font-size: 6rem;
     }
+     .icon img{
+        height: 125px; 
+    }
 }
 
 @media only screen and (min-width:50em){
@@ -399,6 +433,10 @@ figure .icon{
       .problem-type {
         font-size: 7rem;
     }
+    
+    .icon img{
+        height: 150px; 
+    }
 }
 
 @media only screen and (min-width:60em){
@@ -407,6 +445,10 @@ figure .icon{
     }
       .problem-type {
         font-size: 8rem;
+    }
+    
+     .icon img{
+        height: 175px; 
     }
 }
 

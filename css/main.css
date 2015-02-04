@@ -214,22 +214,23 @@ text-decoration: underline;
 	margin: .5em .25em .5em;
 }
 
-.icon{
+figure .icon{
+    margin: 0 auto 0;
+    width:30%;
+    align-content: center;
+    text-align: center;
     display: inline-block;
-    margin: 0 auto 0;
-    align-content: center;
-    
-}
-.icon img{
-    height:100px;
-    margin: 0 auto 0;
-    align-content: center;
 }
 
-.problem icon{
-    margin: 0 auto 0;
-    align-content: center;
+
+.icon{
+    display: inline-block;
 }
+
+.icon img{
+    height:100px;
+}
+
 
 .gear:hover{
     animation: spin 3s linear infinite;
@@ -373,3 +374,33 @@ text-decoration: underline;
     
 }
 
+
+@media only screen and (min-width:30em){
+    .container {
+        margin: 0 3em 0;
+    }
+}
+
+@media only screen and (min-width:40em){
+    .container {
+        margin: 0 5em 0;
+    }
+}
+
+@media only screen and (min-width:50em){
+    .container {
+        margin: 0 7em 0;
+    }
+}
+
+@media only screen and (min-width:60em){
+    .container {
+        margin: 0 9em 0;
+    }
+}
+
+@media only screen and (min-width:70em){
+    .container {
+        margin: 0 11em 0;
+    }
+}

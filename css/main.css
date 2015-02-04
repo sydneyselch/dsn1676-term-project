@@ -215,12 +215,161 @@ text-decoration: underline;
 }
 
 .icon{
-    display: inline;
+    display: inline-block;
     margin: 0 auto 0;
+    align-content: center;
     
 }
 .icon img{
     height:100px;
     margin: 0 auto 0;
+    align-content: center;
+}
+
+.problem icon{
+    margin: 0 auto 0;
+    align-content: center;
+}
+
+.gear:hover{
+    animation: spin 3s linear infinite;
+    -webkit-animation: spin 3s linear infinite;
+	-moz-animation: spin 3s linear infinite;
+ 	-ms-animation: spin 3s linear infinite;
+ 	-o-animation:  spin 3s linear infinite;
+}
+
+@keyframes spin{
+   0%{
+       -webkit-transform: rotate(0deg);   
+   }
+    
+    100% {
+         -webkit-transform: rotate(360deg);   
+   }     
+    
+}
+
+@-webkit-keyframes spin{
+   0%{
+       -webkit-transform: rotate(0deg);   
+   }
+    
+    100% {
+         -webkit-transform: rotate(360deg);   
+   }     
+    
+}
+
+.paper:hover{
+    animation: rock 3s;
+     -webkit-animation: rock 3s;
+	-moz-animation: rock 3s;
+ 	-ms-animation: rock 3s  ;
+ 	-o-animation:  rock 3s;
+    
+}
+
+
+@keyframes rock{
+   0%{
+       -webkit-transform: rotate(0deg);   
+   }
+    
+    50% {
+         -webkit-transform: rotate(180deg);   
+   }  
+    
+    75%{
+        -webkit-transform: rotate(0deg);  
+    }
+        
+    100% {
+         -webkit-transform: rotate(360deg);   
+   }  
+    
+    
+}
+    
+@-webkit-keyframes rock{
+   0%{
+       -webkit-transform: rotate(0deg);   
+   }
+    
+    50% {
+         -webkit-transform: rotate(180deg);   
+   }  
+    
+    75%{
+        -webkit-transform: rotate(0deg);  
+    }
+        
+    100% {
+         -webkit-transform: rotate(360deg);   
+   }  
+    
+    
+}
+
+
+.pencil:hover{
+    anmiaton: shake 1s linear;  
+    -webkit-animation: shake 1s linear ;  
+	-moz-animation: shake 1s linear;  
+ 	-ms-animation: shake 1s linear ;  
+ 	-o-animation:  shake 1s linear infinite;  
+    
+}
+
+
+@keyframes shake{
+     0%{
+       -webkit-transform: translateX(0px);   
+   }
+    
+    25%{
+       -webkit-transform: translateX(10px);   
+   }
+    
+    50% {
+         -webkit-transform: translateX(0px);    
+   }  
+    
+     75%{
+        -webkit-transform: translateX(5px);   
+   }
+    
+      100%{
+        -webkit-transform: translateX(0px);   
+   }
+    
+    
+}
+
+
+
+@-webkit-keyframes shake{
+   0%{
+       -webkit-transform: translateX(0px);   
+   }
+    
+    25%{
+       -webkit-transform: translateX(10px);   
+   }
+    
+    50% {
+         -webkit-transform: translateX(0px);    
+   }  
+    
+     75%{
+        -webkit-transform: translateX(5px);   
+   }
+    
+      100%{
+        -webkit-transform: translateX(0px);   
+   }
+    
+
+    
 }
 

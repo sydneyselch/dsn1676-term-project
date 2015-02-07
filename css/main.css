@@ -181,61 +181,61 @@ text-decoration: underline;
 
 
 @-webkit-keyframes colorshift {
-	0%   { color: #ff4701; }
+	0%   { color: #C71585; }
 	25%  { color: #a568e9; }
 	50%  { color: #47edfb; }
 	75%  { color: #1cd89e; }
-	100%  { color: #ff4701; }
+	100%  { color: #C71585; }
 }
 @-moz-keyframes colorshift {
-	0%   { color: #ff4701; }
+	0%   { color: #C71585; }
 	25%  { color: #a568e9; }
 	50%  { color: #47edfb; }
 	75%  { color: #1cd89e; }
-	100%  { color: #ff4701; }
+	100%  { color: #C71585; }
 }
 @-ms-keyframes colorshift {
-	0%   { color: #ff4701; }
+	0%   { color: #C71585; }
 	25%  { color: #a568e9; }
 	50%  { color: #47edfb; }
 	75%  { color: #1cd89e; }
-	100%  { color: #ff4701; }
+	100%  { color: #C71585; }
 }
 @-o-keyframes colorshift {
-	0%   { color: #ff4701; }
+	0%   { color: #C71585; }
 	25%  { color: #a568e9; }
 	50%  { color: #47edfb; }
 	75%  { color: #1cd89e; }
-	100%  { color: #ff4701; }
+	100%  { color: #C71585; }
 }
 
 @-webkit-keyframes bgcolorshift {
-	0%   { background-color: #ff4701; }
+	0%   { background-color: #C71585; }
 	25%  { background-color: #a568e9; }
 	50%  { background-color: #47edfb; }
 	75%  { background-color: #1cd89e; }
 	100%  { background-color: #ff4701; }
 }
 @-moz-keyframes bgcolorshift {
-	0%   { background-color: #ff4701; }
+	0%   { background-color: #C71585; }
 	25%  { background-color: #a568e9; }
 	50%  { background-color: #47edfb; }
 	75%  { background-color: #1cd89e; }
-	100%  { background-color: #ff4701; }
+	100%  { background-color: #C71585; }
 }
 @-ms-keyframes bgcolorshift {
-	0%   { background-color: #ff4701; }
+	0%   { background-color: #C71585; }
 	25%  { background-color: #a568e9; }
 	50%  { background-color: #47edfb; }
 	75%  { background-color: #1cd89e; }
-	100%  { background-color: #ff4701; }
+	100%  { background-color: #C71585; }
 }
 @-o-keyframes bgcolorshift {
-	0%   { background-color: #ff4701; }
+	0%   { background-color: #C71585; }
 	25%  { background-color: #a568e9; }
 	50%  { background-color: #47edfb; }
 	75%  { background-color: #1cd89e; }
-	100%  { background-color: #ff4701; }
+	100%  { background-color: #C71585; }
 }
 
 .problem-type{
@@ -244,7 +244,7 @@ text-decoration: underline;
 	font-family: Helvetica;
 	font-weight: bold;
 	font-style: normal;
-    letter-spacing: -.5rem;
+    letter-spacing: -.25rem;
 	text-transform: uppercase;
 	color: #50ecf8;
 	-webkit-animation: colorshift 15s infinite;

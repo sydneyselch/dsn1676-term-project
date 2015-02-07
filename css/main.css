@@ -170,11 +170,11 @@ text-decoration: underline;
 
 @keyframes zoom{
     0% {
-        -webkit-transform: scale(1,1)
+        transform: scale(1,1)
     }
     
     100% {
-        -webkit-transform: scale(1.125,1.125)   
+       transform: scale(1.125,1.125)   
     }
 }
 
@@ -294,30 +294,30 @@ figure .icon{
     background: url(../img/arrow.svg) no-repeat center center;
     transition: all 1s linear;
     -webkit-transform: scale(1,1);
+    transform: scale(1,1);
     
 }
 
-#page-down-arrow:hover{
-    
-}
 
 #down-arrow-icon:hover {
-       -webkit-transform: scale(1.25,1.25);
-    
+       -webkit-transform: scale(1.25,1.25); 
+        transform: scale(1.25,1.25); 
 }
-
 
 
 
 .gear {
     -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
     transition: all 3s linear;
 }
 
 
 .gear:hover{
     -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
+
 
 @-webkit-keyframes spin{
    0%{
@@ -326,6 +326,17 @@ figure .icon{
     
     100% {
          -webkit-transform: rotate(360deg);   
+   }     
+    
+}
+
+@keyframes spin{
+   0%{
+       transform: rotate(0deg);   
+   }
+    
+    100% {
+         transform: rotate(360deg);   
    }     
     
 }
@@ -393,23 +404,23 @@ figure .icon{
 
 @keyframes shake{
      0%{
-       -webkit-transform: translateX(0px);   
+       transform: translateX(0px);   
    }
     
     25%{
-       -webkit-transform: translateX(10px);   
+       transform: translateX(10px);   
    }
     
     50% {
-         -webkit-transform: translateX(0px);    
+         transform: translateX(0px);    
    }  
     
      75%{
-        -webkit-transform: translateX(5px);   
+       transform: translateX(5px);   
    }
     
       100%{
-        -webkit-transform: translateX(0px);   
+        transform: translateX(0px);   
    }
     
     

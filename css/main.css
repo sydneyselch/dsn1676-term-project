@@ -51,22 +51,58 @@ a:focus {
     margin: .5rem;
 }
 
-.logo{
-    width:75px;
-    height:75px;
+#logo{
+  height: 150px;
     background-image: url(../img/logo.svg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    display: block;
-    margin: 1em auto 1em;
+    margin:-.3em auto;
     text-indent: -9999px;
+    overflow: hidden;
+    display: block;
 }
 
-a {
-color: #8b8b8b;
-cursor: pointer;
-outline: none;
-text-decoration: underline; 
+#header{
+    text-transform: uppercase;
+    font-size: .75;
+    padding: 0;
+    overflow: hidden;
+}
+
+#header ul{ 
+    padding: 10px 20px 0;
+    list-style-type: none;
+    text-align: center;
+    overflow: hidden;
+    font-family: Helvetica, arial, sans-serif;
+    
+}
+
+#header ul li:first-child{
+    margin:0;   
+}
+
+#header ul li{
+    width: 20%;
+    padding: 45px 0 0;
+    float: left;
+    margin: 0;
+    position: relative;
+    letter-spacing: .25em;
+    font-weight: 100;
+}
+
+#header ul li a {
+    color: #8b8b8b;
+    cursor: pointer;
+    outline: none;
+    transition: all .3s linear;
+    text-decoration: none;
+    display: block;
+}
+
+#header ul li.middle{
+    padding: 45px 0 0;
 }
 
 .billboard{
@@ -94,39 +130,6 @@ text-decoration: underline;
     letter-spacing: -.125em;
     
 }
-
-#header{
-    height: 8em;
-}
-
-#header ul{
-    display: block;
-    list-style-type: none;
-    text-align: center;
-    
-}
-
-#header ul li{
-    display:inline-block;
-    margin: 0 0 0 24px;
-    position: relative;
-    
-    letter-spacing: .125em;
-}
-
-#header ul li:first-child {
-    margin:0;
-}
-
-#header ul li.middle{
-    display: none;  
-}
-
-#header ul li a{
-    color: grey;
-    text-decoration: none;
-}
-
 
 .problem{
     border-top: 1px solid #CDCDCD;

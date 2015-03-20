@@ -12,7 +12,6 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -o-text-size-adjust: 100%;
-    overflow: hidden;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -23,7 +22,7 @@ html {
 body{
     margin:0;
     padding:0;
-    overflow: hidden;
+    
 }
 
 a:focus {
@@ -128,38 +127,11 @@ a:focus {
 }
 
 .billboard{
-    background-image: url(../img/sunset.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width:100%;
-    max-width: 100%;
-    height:20em;
-    position: absolute;
-    transform-origin: center;
-    overflow: hidden;
-}
-
-.billboard h1{
-    text-align: center;
-    position: relative;
-    top: 1em;
-    font-family: Helvetica;
-    text-transform: uppercase;
-    color: white;
-    font-size:5rem;
-    overflow: hidden;
-    font-weight: bold;
-    letter-spacing: -.125em;
-    
-}
-
-.problem{
     border-top: 1px solid #CDCDCD;
 	border-bottom: 2px solid #CDCDCD;
 	position: relative;
     z-index: 1;
-    padding: 0 0 2em;
-
+    padding: 0 0 1em;
 }
 
 .confetti{
@@ -267,7 +239,7 @@ a:focus {
 }
 
 .problem-type{
-	font-size: 4.25em;
+	font-size: 4em;
 	line-height: .75em;
 	font-family: Helvetica;
 	font-weight: bold;
@@ -279,7 +251,7 @@ a:focus {
 	-moz-animation:    colorshift 15s infinite;
  	-ms-animation:     colorshift 15s infinite;
  	-o-animation:      colorshift 15s infinite;
-	margin: .5em .25em .125em;
+	margin: .5em 5% 0;
 }
 
 figure .icon{
@@ -297,6 +269,122 @@ figure .icon{
 
 .icon img{
     height:100px;
+}
+
+.square-ai{
+    width: 150px;
+    margin: 0 auto .5em;
+    background-image: url(../img/icon-ai.svg);
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.square-ps{
+    width: 150px;
+    margin: 0 auto .5em;
+    background-image: url(../img/icon-ps.svg);
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.square-id{
+    width: 150px;
+    margin: 0 auto .5em;
+    background-image: url(../img/icon-id.svg);
+    height:150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.js-wand .wand {
+    background-image: url(../img/wand.svg);
+    background-repeat: no-repeat;
+    height: 40px;
+    right:20px;
+    width: 75px;
+    z-index: 2;
+    float: right;
+    margin: 0;
+    -webkit-animation: wand-turn 2s ease-in-out alternate;
+    animation: wand-turn 2s ease-in-out alternate;
+}
+
+.js-square-ps .wand {
+    display:none;
+    
+}
+
+@-webkit-keyframes wand-turn {
+    0% {
+        transform: rotate(0deg);
+}
+    
+    100%{
+        transform: rotate(-65deg);
+    }
+}
+
+@keyframes wand-turn {
+    0% {
+        transform: rotate(0deg);
+}
+    
+    100%{
+        transform: rotate(-65deg);
+    }
+}
+
+
+
+
+
+.js-square-ai{
+    width: 150px;
+    margin: 0 auto .5em;
+    background-image: url(../img/icon-ai3.svg);
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.js-square-ps{
+    width: 150px;
+    margin: 0 auto .5em;
+    background-image: url(../img/icon-ps2.svg);
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.js-square-id{
+    width: 150px;
+    margin: 0 auto .5em;
+    background-image: url(../img/icon-id3.svg);
+    height:150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icon-caption{
+    margin: .25em auto 1em;   
+    text-align: center;
+    font-family: Helvetica;
+    font-weight: 100;
+}
+
+.skills{
+    text-align: center;
+    margin: 1em 0 0;
+    font-weight: 300;
+    
+}
+
+
+.creative-cloud{
+    margin: 0 auto 0;
+    padding: 1em 10% 1em;
 }
 
 #page-down-arrow{
@@ -317,7 +405,8 @@ figure .icon{
 }
 
 #down-arrow-icon{
-    height: 25px;
+    margin: .25em 0 0;
+    height: 20px;
     width: 50px;
     background: url(../img/arrow.svg) no-repeat center center;
     transition: all 1s linear;
@@ -493,6 +582,14 @@ figure .icon{
 }
 
 @media only screen and (min-width:40em){
+    
+    figure .box{
+        display: inline-block;
+        width: 30%;
+        margin: 1em 0 1em;
+           
+    }
+        
     .container {
         margin: 0 5em 0;
     }

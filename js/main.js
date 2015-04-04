@@ -37,5 +37,10 @@ $id.on('click', function () {
 });
 
 
+$('.desktop-nav').localScroll();
+
+$('.panel').localScroll();
+
+
 
 

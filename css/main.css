@@ -377,7 +377,9 @@ figure .icon{
 .skills{
     text-align: center;
     margin: 1em 0 0;
-    font-weight: 300;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: grey;
     
 }
 
@@ -385,6 +387,14 @@ figure .icon{
 .creative-cloud{
     margin: 0 auto 0;
     padding: 1em 10% 1em;
+}
+
+.footer{
+    background-color: purple;
+    height: 300px;
+    width: 100%;
+    
+    
 }
 
 #page-down-arrow{
@@ -415,10 +425,46 @@ figure .icon{
     
 }
 
+.work{
+    height:auto;   
+}
+
+.work img{
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    margin: 0 auto 0;
+    border: 1px solid black;
+    
+}
+
+.project{
+    width:270px;
+    height: auto;
+    border: 1px solid red;
+    margin: 1em auto 0;
+}
+
+.contact {  
+    text-align: center;
+    margin: 1em 0 0;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: white;
+}
+
+.footer p{
+    text-align: center;
+    color: white;
+    margin:.5em;
+    
+}
+
 
 #down-arrow-icon:hover {
        -webkit-transform: scale(1.25,1.25); 
         transform: scale(1.25,1.25); 
+
 }
 
 

@@ -278,6 +278,7 @@ figure .icon{
     height: 150px;
     background-repeat: no-repeat;
     background-size: cover;
+     cursor: pointer;
 }
 
 .square-ps{
@@ -287,6 +288,7 @@ figure .icon{
     height: 150px;
     background-repeat: no-repeat;
     background-size: cover;
+     cursor: pointer;
 }
 
 .square-id{
@@ -296,6 +298,7 @@ figure .icon{
     height:150px;
     background-repeat: no-repeat;
     background-size: cover;
+     cursor: pointer;
 }
 
 .js-wand .wand {
@@ -347,6 +350,7 @@ figure .icon{
     height: 150px;
     background-repeat: no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 
 .js-square-ps{
@@ -356,6 +360,7 @@ figure .icon{
     height: 150px;
     background-repeat: no-repeat;
     background-size: cover;
+     cursor: pointer;
 }
 
 .js-square-id{
@@ -365,6 +370,7 @@ figure .icon{
     height:150px;
     background-repeat: no-repeat;
     background-size: cover;
+     cursor: pointer;
 }
 
 .icon-caption{
@@ -393,9 +399,20 @@ figure .icon{
     background-color: purple;
     height: 300px;
     width: 100%;
-    
-    
 }
+
+.back{
+
+      
+}
+.back a {
+    text-decoration: none;
+    list-style-type: none;
+    color:white;
+    letter-spacing: .0125em;
+    text-transform: uppercase;
+    font-weight: 100;
+}   
 
 #page-down-arrow{
     position: absolute;
@@ -434,14 +451,13 @@ figure .icon{
     height: 250px;
     text-align: center;
     margin: 0 auto 0;
-    border: 1px solid black;
+
     
 }
 
 .project{
     width:270px;
     height: auto;
-    border: 1px solid red;
     margin: 1em auto 0;
 }
 
@@ -634,6 +650,14 @@ figure .icon{
         width: 30%;
         margin: 1em 0 1em;
            
+    }
+    
+    .project{
+        width: 30%;
+        height: auto;
+        display: inline-block;
+        margin: 0 auto 0;
+        padding-left: 2em;
     }
         
     .container {

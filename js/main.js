@@ -1,5 +1,6 @@
 var $hamBtn = $('.ham-btn');
 var $panel = $('.panel');
+var $back = $('.back');
 
 var $ai = $('.square-ai');
 var $ps = $('.square-ps');
@@ -40,6 +41,8 @@ $id.on('click', function () {
 $('.desktop-nav').localScroll();
 
 $('.panel').localScroll();
+
+$('.back').localScroll();
 
 
 
